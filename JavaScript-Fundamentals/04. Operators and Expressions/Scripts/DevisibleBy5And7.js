@@ -1,0 +1,6 @@
+﻿(function devisibleBy5And7() {
+	'use strict';
+	var n = 70,
+		divisible = n % 35 === 0;
+	console.log('%d is divisible by 7 and 5: ', n, divisible);
+}());

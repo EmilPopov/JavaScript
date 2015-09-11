@@ -1,0 +1,9 @@
+function quadraticEquationSolver() {
+	var a = 1,
+		b = -5,
+		c = 6,
+		d = b * b - 4 * a * c;
+	console.log((-b + Math.sqrt(d)) / (2 * a));
+	console.log((-b - Math.sqrt(d)) / (2 * a));
+}
+quadraticEquationSolver();
