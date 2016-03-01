@@ -1,0 +1,249 @@
+html, body, div, span, iframe, a,
+h1, h2, h3, h4, h5, h6, p, pre,
+em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figcaption, figure,
+footer, header, menu, nav, section,
+time, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, figcaption, figure,
+footer, header, nav, section {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+img {
+  border: 0; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0; }
+
+body {
+  font: 12px "Georgia", "Verdana", sans-serif;
+  color: white;
+  background: url("../images/background.jpg") no-repeat #252017; }
+
+.main-nav {
+  padding-left: 250px;
+  background-color: rgba(36, 17, 28, 0.3);
+  border-bottom: 1px solid #a56c98; }
+  .main-nav ul {
+    height: 50px;
+    line-height: 50px;
+    text-transform: lowercase; }
+    .main-nav ul li {
+      position: relative;
+      display: inline-block; }
+      .main-nav ul li a {
+        padding: 0 12px;
+        text-align: center;
+        text-decoration: none;
+        font: 14px "Verdana", sans-serif;
+        color: white;
+        display: block; }
+        .main-nav ul li a:hover {
+          color: #ffaee9; }
+        .main-nav ul li a.selected {
+          background-color: #gray; }
+
+#wrapper {
+  width: 960px;
+  margin: 0 auto; }
+
+#logo {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 36px; }
+  #logo a {
+    color: white; }
+  #logo span {
+    color: #ffaee9; }
+
+#main-slider {
+  margin-top: 25px;
+  height: 180px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  border-bottom: 0;
+  background-color: rgba(36, 17, 28, 0.3); }
+  #main-slider h2 {
+    margin-top: 20px;
+    color: #ffe5b2;
+    font-size: 36px;
+    font-weight: 100; }
+  #main-slider a {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 78px 10px; }
+    #main-slider a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 9px 0 0 9px; }
+  #main-slider .right-arrow:hover {
+    border-radius: 0 9px 9px 0; }
+  #main-slider article {
+    width: 884px;
+    float: left;
+    padding-left: 6px;
+    padding-right: 6px; }
+    #main-slider article p {
+      line-height: 20px;
+      margin-top: 10px; }
+
+.article-span {
+  display: block;
+  margin-top: 20px;
+  color: #9d7c9a;
+  padding: 5px 0 5px 10px;
+  border-top: 1px solid #6d4663;
+  border-bottom: 1px solid #6d4663; }
+
+#main-content {
+  height: 920px;
+  background: #24111c;
+  margin-top: 25px;
+  padding: 30px 25px;
+  border: 2px solid rgba(255, 174, 233, 0.5); }
+  #main-content section {
+    width: 265px;
+    height: 325px;
+    float: left;
+    margin-left: 55px;
+    display: inline-block; }
+  #main-content #popular-articles {
+    margin-left: 0; }
+  #main-content h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 20px;
+    color: #ffe5b2; }
+  #main-content article h3 {
+    margin-top: 20px;
+    color: #795367;
+    font-size: 15px; }
+  #main-content article span {
+    font-size: 10px;
+    margin-top: 10px; }
+  #main-content article p {
+    margin-top: 10px;
+    padding-left: 90px;
+    color: #b28da1;
+    line-height: 20px; }
+  #main-content .img-placeholder {
+    width: 75px;
+    height: 75px;
+    margin-top: 5px;
+    float: left;
+    border: 1px solid #3f1a2e;
+    box-shadow: -1px -1px 0px 2px #5B0962 inset; }
+  #main-content .main-side {
+    border: 1px solid white;
+    float: left; }
+  #main-content .right-side {
+    border: 1px solid white;
+    float: left; }
+  #main-content #comments h3 {
+    background: url("../images/comments.png") 0 0 no-repeat;
+    padding-left: 25px;
+    padding-top: 5px; }
+  #main-content #comments p {
+    border-top: 1px solid #6d4663;
+    padding-left: 0; }
+  #main-content #comments span {
+    font-size: 15px;
+    color: #b28da1;
+    font-style: italic; }
+  #main-content #second-content-article {
+    margin-top: 40px; }
+  #main-content #posts {
+    width: 585px;
+    margin-left: 0; }
+    #main-content #posts .posts-img-placeholder {
+      width: 215px;
+      height: 215px;
+      margin-top: 10px;
+      float: left;
+      background: #342d20; }
+    #main-content #posts p {
+      padding-left: 240px; }
+  #main-content #right-side h4 {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#63274f+38,26151c+85 */
+    background: #left;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #63274f 38%, #26151c 85%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #63274f 38%, #26151c 85%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #63274f 38%, #26151c 85%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border: 1px solid #601444;
+    border-radius: 10px;
+    padding: 20px 0 20px 25px;
+    margin-top: 10px; }
+  #main-content #right-side li {
+    padding: 10px;
+    border-bottom: 1px solid #6d4663; }
+    #main-content #right-side li a {
+      color: white;
+      font-size: 10px; }
+      #main-content #right-side li a:before {
+        content: ">";
+        margin: 0 15px 0 0;
+        display: inline-block;
+        opacity: .3; }
+
+footer {
+  background: #24111c;
+  color: #b28da1;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #826d6a;
+  border-bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,243 @@
+@import 'constants.scss';
+body {
+    color: white;
+    font-family: Segoe UI;
+    .container {
+        width: 1200px;
+    }
+}
+
+header {
+    background-color: black;
+    padding: 2.5em 8.13em 2.5em 8.13em;
+    #logo {
+        font-size: 1.6em;
+        font-weight: bold;
+        text-transform: uppercase;
+        span {
+            font-weight: normal;
+            &:before {
+                content: "";
+                margin: 0 5px 0 0;
+                display: inline-block;
+                width: .8em;
+                height: .8em;
+                border-radius: 100%;
+                border: 3px solid $lightColor;
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+    .user-nav {
+        padding-top:10px;
+        text-align: right;
+        text-transform: uppercase;
+        a {
+            color: white;
+        }
+        .my-nav {
+            li {
+                font-size: .8em;
+                i{
+                    margin-right: 5px;
+                }
+            }
+            li+li {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+#nav {
+    @extend %left-right-padding;
+    width: 1200px;
+    text-transform: uppercase;
+    color: white;
+    background: rgba($darkColor, .7);
+    position: relative;
+    z-index: 2;
+    .navbar {
+        margin: 0;
+        border-radius: 0;
+        border: 0;
+    }
+    a {
+        padding: 15px 0;
+        color: inherit;
+        &:hover {
+            text-decoration: underline;
+            background: none;
+        }
+    }
+    li:nth-child(1) > a {
+        padding-left: 15px;
+    }
+    li+li {
+        margin-left: 15px;
+        a:before {
+            content: "";
+            margin: 0 15px 0 0;
+            display: inline-block;
+            width: .7em;
+            height: .7em;
+            border-radius: 100%;
+            border: 2px solid $lightColor;
+            position: relative;
+            top: 0px;
+        }
+    }
+    input[type="search"] {
+        box-shadow: none;
+        width: 290px;
+        border: 0;
+        color: white;
+        background: $lightColor;
+    }
+    .form-group {
+        position: relative;
+        >.glyphicon {
+            position: absolute;
+            right: .5em;
+            top: .75em;
+        }
+    }
+}
+
+#carosel {
+    background: black;
+    height: 400px;
+    .slide {
+        background: black url("../images/felps.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+        float: none;
+    }
+    .nav-banner {
+        color: inherit;
+        width: 100%;
+        height: 100%;
+        background: url("../images/watch.png") 290px 40px no-repeat;
+        h3 {
+            font-size: 1.7em;
+            font-weight: lighter;
+        }
+        p {
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        .btn {
+            width: 150px;
+            height: 40px;
+            text-transform: uppercase;
+            color: white;
+            border: 2px solid white;
+            background: black;
+        }
+        @extend %left-right-padding;
+        position:relative;
+        top:100px;
+    }
+}
+
+#nav + #carosel {
+    position: relative;
+    z-index: 1;
+}
+
+//--main--
+.promo-gallery {
+    @extend %left-right-padding;
+    margin-top: 40px;
+    >section {
+        position: relative;
+        height: 200px;
+        text-align: center;
+        background-clip: content-box;
+        background-size: cover;
+        .btn {
+            height: 40px;
+            width: 150px;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 10px;
+            margin: auto;
+            position: absolute;
+            top: 140px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.btn-primary {
+    box-shadow: 0 2px 0 0 $darkColor;
+    color: white;
+    border: 0;
+    background: $lightColor;
+}
+
+.my-nav {
+    @extend %reset;
+    >li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+#sitemap {
+    padding: 2.5em 8.13em 2.5em 8.13em;
+    background-color: $lightColor;
+    margin-top: 50px;
+    h6 {
+        margin-top: 0;
+        font: inherit;
+        text-transform: uppercase;
+    }
+    a {
+        color: inherit;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    ul {
+        @extend %reset;
+        li {
+            padding-top: 15px;
+            font-weight: lighter;
+            font-size: 0.9em;
+        }
+    }
+}
+
+//--footer--
+footer {
+    padding: 1em 8.13em 1em 8.13em;
+    background-color: $darkColor;
+    font-weight: light;
+    .copy {
+        padding-top:5px;
+        font-weight: lighter;
+        font-size: 0.75em;
+    }
+    li{
+        font-weight: 150;
+    }
+    a {
+        color: white;
+        font-size: .8em;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+            background: none;
+        }
+    }
+    li + li:before {
+        content: "|";
+        margin: 0 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

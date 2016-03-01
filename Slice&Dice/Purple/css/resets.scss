@@ -1,0 +1,58 @@
+//-- RESETS --
+
+html, body, div, span, iframe,a,
+h1, h2, h3, h4, h5, h6, p, pre,
+ em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figcaption, figure,
+footer, header, menu, nav, section,
+time,  audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,figcaption,figure,
+footer,header,nav,section {
+    display:block;
+}
+ul {
+    list-style:none;
+}
+a {
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+img{
+    border:0;
+}
+
+
